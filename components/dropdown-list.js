@@ -31,20 +31,22 @@ const DropdownList = ({
     <div
       className={`${active === true ? "active" : ""} dropdown-list`}
       ref={dropdownRef}
+      data-testid="dropdown-list"
     >
       <button
         className="dropdown-btn"
         onClick={() => {
           setActive(!active);
         }}
+        data-testid="dropdown-btn"
       >
         {defaultItemText}
       </button>
-      <ul>
+      <ul role="menu">
         {items.map((item, index) => {
           const url = item.split(" ").join("-");
           return (
-            <li key={index}>
+            <li key={index} role="menuitem">
               <a href={`#${url}`}>{item}</a>
             </li>
           );

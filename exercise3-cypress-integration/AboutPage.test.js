@@ -1,6 +1,6 @@
-describe("HomePage", () => {
+describe("AboutPage", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:1234/");
+    cy.visit("http://localhost:1234/about");
     cy.injectAxe();
   });
 
@@ -10,10 +10,6 @@ describe("HomePage", () => {
 
   it("should have a Footer", () => {
     cy.get("footer img").should("have.attr", "alt", "CampSpots");
-  });
-
-  it("should have an aria-current home link", () => {
-    cy.get("#header-logo a").should("have.attr", "aria-current", "page");
   });
 
   it("should have no accessibility violations", () => {
