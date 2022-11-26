@@ -1,9 +1,10 @@
 {
-    "component": {
-        "componentFolder": "exercise2-cypress-components",
-        "testFiles": "**/*test.{js,jsx,ts,tsx}"
-    },
-    "integrationFolder": "exercise3-cypress-integration",
-    "testFiles": "**/*.test.{js,jsx,ts,tsx}",
-    "video": false
+  "component": {
+    "componentFolder": "exercise2-cypress-components",
+    "testFiles": "**/*test.{js,jsx,ts,tsx}"
+  },
+  "integrationFolder": "exercise3-cypress-integration",
+  "testFiles": "**/*.test.{js,jsx,ts,tsx}",
+  "video": false,
+  "screenshotOnRunFailure": false
 }
